@@ -1,0 +1,40 @@
+#first{
+    margin: 3%;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+.name{
+    text-align: left;
+}
+.email{
+    text-align: center;
+}
+.phone{
+    text-align: end;
+}
+table{
+    width: 100%;
+}
+#second{
+    margin: 10%;
+    height: 30%;
+}
+#menu{
+    border: gray 2px solid;
+    
+}
+.secondTable{
+    border-collapse: collapse; 
+    
+}
+.row, .column{
+    padding: 0%;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: gray;
+}
