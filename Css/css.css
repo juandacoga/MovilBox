@@ -47,3 +47,7 @@ input {
     padding: 5px 10px;
     color: gray;
 }
+
+#code {
+    border: gray 2px solid;
+}

@@ -167,9 +167,10 @@
     print "<br>";
 
 
-    #Determinar menor
+    #Determinar menor e imprimir 
+    
     if ($sum1[$container1][0] < $sum2[$container2][0] and $sum1[$container1][0] < $sum3[$container3][0]) {
-        print "Ruta con menor suma posible: ".$value1.", ".$sum1[$container1][1].", ".$sum2[$container1][2]."";
+        print "Ruta con menor suma posible: ".$value1.", ".$sum1[$container1][1].", ".$sum1[$container1][2]."";
         print "<br>";
         print "<br>";
         print "La suma es: ".$sum1[$container1][0];
@@ -179,27 +180,50 @@
         print "<br>";
         print "La suma es: ".$sum2[$container2][0];
     }elseif ($sum3[$container3][0] < $sum1[$container1][0] and $sum3[$container3][0] < $sum2[$container2][0]) {
-        print "Ruta con menor suma posible: ".$value3.", ".$sum3[$container3][1].", ".$sum2[$container3][2]."";
-        print "<br>";
-        print "<br>";
-        print "La suma es: ".$sum3[$container3][0];
-    }elseif ($value1 < $value2 and $value1 < $value3){
-        print "Ruta con menor suma posible: ".$value1.", ".$sum1[$container1][1].", ".$sum2[$container1][2]."";
-        print "<br>";
-        print "<br>";
-        print "La suma es: ".$sum1[$container1][0];
-    }elseif ($value2 < $value1 and $value2 < $value3){
-        print "Ruta con menor suma posible: ".$value2.", ".$sum2[$container2][1].", ".$sum2[$container2][2]."";
-        print "<br>";
-        print "<br>";
-        print "La suma es: ".$sum2[$container2][0];
-    }elseif ($value3 < $value1 and $value3 < $value2){
-        print "Ruta con menor suma posible: ".$value3.", ".$sum3[$container3][1].", ".$sum2[$container3][2]."";
+        print "Ruta con menor suma posible: ".$value3.", ".$sum3[$container3][1].", ".$sum3[$container3][2]."";
         print "<br>";
         print "<br>";
         print "La suma es: ".$sum3[$container3][0];
     }else {
-        print "Error";
+        if ($sum1[$container1][0] == $sum2[$container2][0] and $sum2[$container2][0] != $sum3[$container3][0]) {
+            if ($value1<$value2) {
+                print "Ruta con menor suma posible: ".$value1.", ".$sum1[$container1][1].", ".$sum1[$container1][2]."";
+                print "<br>";
+                print "<br>";
+                print "La suma es: ".$sum1[$container1][0];
+            }else {
+                print "Ruta con menor suma posible: ".$value2.", ".$sum2[$container2][1].", ".$sum2[$container2][2]."";
+                print "<br>";
+                print "<br>";
+                print "La suma es: ".$sum2[$container2][0];
+            }
+        }elseif ($sum3[$container3][0] == $sum2[$container2][0] and $sum2[$container2][0] != $sum1[$container1][0]) {
+            if ($value3<$value2) {
+                print "Ruta con menor suma posible: ".$value3.", ".$sum3[$container3][1].", ".$sum3[$container3][2]."";
+                print "<br>";
+                print "<br>";
+                print "La suma es: ".$sum3[$container3][0];
+            }else {
+                print "Ruta con menor suma posible: ".$value2.", ".$sum2[$container2][1].", ".$sum2[$container2][2]."";
+                print "<br>";
+                print "<br>";
+                print "La suma es: ".$sum2[$container2][0];
+            }
+        }elseif ($sum3[$container3][0] == $sum1[$container1][0] and $sum2[$container2][0] != $sum1[$container1][0]) {
+            if ($value3<$value1) {
+                print "Ruta con menor suma posible: ".$value3.", ".$sum3[$container3][1].", ".$sum3[$container3][2]."";
+                print "<br>";
+                print "<br>";
+                print "La suma es: ".$sum3[$container3][0];
+            }else {
+                print "Ruta con menor suma posible: ".$value1.", ".$sum1[$container1][1].", ".$sum1[$container1][2]."";
+                print "<br>";
+                print "<br>";
+                print "La suma es: ".$sum1[$container1][0];
+            }
+        }else {
+            print "Error: ";
+        }
     }
 
 
