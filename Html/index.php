@@ -24,15 +24,15 @@
                 
                 <table class="secondTable">
                     <tr class="row">
-                        <th class="column"><h2><a href="xphp.html">1.La x</a></h3></th>
+                        <th class="column"><h2><a href="xphp.php">1.La x</a></h3></th>
                         <th class="column"><h2><a href="../Php/Departamentos.php">4. SQL departamentos</a></h2></th>
                     </tr>
                     <tr class="row">
-                        <th class="column"><h2><a href="histograma.html">2. Histograma</a></h2></th>
+                        <th class="column"><h2><a href="histograma.php">2. Histograma</a></h2></th>
                         <th class="column"><h2><a href="../Php/Json.php">5. SQL->Json</a></h2></th>
                     </tr>
                     <tr class="row">
-                        <th class="column"><h2><a href="matriz.html">3. Matriz</a></h2></th>
+                        <th class="column"><h2><a href="matriz.php">3. Matriz</a></h2></th>
                         <th class="column"><h2><a href="../Php/Trigger.php">6. SQL trigger</a></h2></th>
                     </tr>
                     <tr class="row">
