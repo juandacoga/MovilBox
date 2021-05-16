@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../Css/css.css" rel="stylesheet" type="text/css">
+    <link href="Css/css.css" rel="stylesheet" type="text/css">
     <title>PruebaTecnica</title>
 </head>
 <body>
@@ -24,20 +24,20 @@
                 
                 <table class="secondTable">
                     <tr class="row">
-                        <th class="column"><h2><a href="xphp.php">1.La x</a></h2></th>
-                        <th class="column"><h2><a href="../Php/Departamentos.php">4. SQL departamentos</a></h2></th>
+                        <th class="column"><h2><a href="Html/xphp.php">1.La x</a></h2></th>
+                        <th class="column"><h2><a href="Php/Departamentos.php">4. SQL departamentos</a></h2></th>
                     </tr>
                     <tr class="row">
-                        <th class="column"><h2><a href="histograma.php">2. Histograma</a></h2></th>
-                        <th class="column"><h2><a href="../Php/Json.php">5. SQL->Json</a></h2></th>
+                        <th class="column"><h2><a href="Html/histograma.php">2. Histograma</a></h2></th>
+                        <th class="column"><h2><a href="Php/Json.php">5. SQL->Json</a></h2></th>
                     </tr>
                     <tr class="row">
-                        <th class="column"><h2><a href="matriz.php">3. Matriz</a></h2></th>
-                        <th class="column"><h2><a href="../Php/Trigger.php">6. SQL trigger</a></h2></th>
+                        <th class="column"><h2><a href="Html/matriz.php">3. Matriz</a></h2></th>
+                        <th class="column"><h2><a href="Php/Trigger.php">6. SQL trigger</a></h2></th>
                     </tr>
                     <tr class="row">
                         <th class="column"></th>
-                        <th class="column"><h2><a href="../Php/SqlJson.php">7. SQL->Json</a></h2></th>
+                        <th class="column"><h2><a href="Php/SqlJson.php">7. SQL->Json</a></h2></th>
                     </tr>
                 </table>
             </div>
