@@ -24,7 +24,7 @@
                 
                 <table class="secondTable">
                     <tr class="row">
-                        <th class="column"><h2><a href="xphp.php">1.La x</a></h3></th>
+                        <th class="column"><h2><a href="xphp.php">1.La x</a></h2></th>
                         <th class="column"><h2><a href="../Php/Departamentos.php">4. SQL departamentos</a></h2></th>
                     </tr>
                     <tr class="row">
