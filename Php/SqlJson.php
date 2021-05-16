@@ -29,7 +29,7 @@
 
         
 
-        $sql = 'SELECT D.department_name AS department, L.description AS levelEd, COUNT(E.id) AS employee, SUM(E.salary) AS salary FROM appx_employee E INNER JOIN appx_department D ON D.id = E.department_id INNER JOIN appx_educationlevel L on l.id = E.educationlevel_id GROUP BY d.department_name';
+        $sql = 'SELECT D.department_name AS department, L.description AS levelEd, COUNT(E.id) AS employee, SUM(E.salary) AS salary FROM appx_employee E INNER JOIN appx_department D ON D.id = E.department_id INNER JOIN appx_educationlevel L on L.id = E.educationlevel_id GROUP BY D.department_name';
 
         $result = mysqli_query($conn, $sql);
 

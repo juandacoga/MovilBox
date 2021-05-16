@@ -43,7 +43,7 @@
             $i=0;
             while($row = mysqli_fetch_assoc($result)) {
                 if ($row["salary"] > 250000) {
-                    $sql2 = "SELECT E.lastname AS lastname, L.description AS levelE FROM appx_employee E INNER JOIN appx_educationlevel L ON L.id = E.educationlevel_id INNER JOIN appx_department D ON E.department_id = D.id WHERE d.id =".$row["id"]. ' ORDER BY E.lastname ';
+                    $sql2 = 'SELECT E.lastname AS lastname, L.description AS levelE FROM appx_employee E INNER JOIN appx_educationlevel L ON L.id = E.educationlevel_id INNER JOIN appx_department D ON E.department_id = D.id WHERE D.id ='.$row["id"]. ' ORDER BY E.lastname ';
                     $result2 = mysqli_query($conn, $sql2);
                     if (mysqli_num_rows($result2) > 0) {
                         
