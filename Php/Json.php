@@ -19,7 +19,7 @@
         SELECT E.lastname AS lastname, L.description AS levelE <br/>
         FROM appx_employee E INNER JOIN appx_educationlevel L ON L.id = E.educationlevel_id <br/>
         INNER JOIN appx_department D ON E.department_id = D.id <br/>
-        WHERE d.id =".$row["id"]. ' ORDER BY E.lastname<br/>
+        WHERE D.id =".$row["id"]. ' ORDER BY E.lastname<br/>
         </p>
     </div>    
     <div id="container">

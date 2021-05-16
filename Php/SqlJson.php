@@ -14,8 +14,8 @@
         <p>
         SELECT D.department_name AS department, L.description AS levelEd, COUNT(E.id) AS employee, SUM(E.salary) AS salary <br/>
         FROM appx_employee E INNER JOIN appx_department D ON D.id = E.department_id <br/>
-        INNER JOIN appx_educationlevel L on l.id = E.educationlevel_id <br/>
-        GROUP BY d.department_name <br/>
+        INNER JOIN appx_educationlevel L on L.id = E.educationlevel_id <br/>
+        GROUP BY D.department_name <br/>
         </p>
     </div>    
     <div id="container">
